@@ -4,3 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
+
+.form-control {
+  @apply my-2;
+}
+.form-control label {
+  @apply mr-6;
+}
+
+.form-control input {
+  @apply bg-transparent border-b border-primary px-4 py-2;
+}
+.form-control input:focus {
+  @apply outline-none;
+}
