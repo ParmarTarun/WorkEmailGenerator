@@ -22,7 +22,7 @@ export const generateMails = async (
   console.log("Responses:", responses);
   const emails: string[] = [];
   responses.forEach((resp) => {
-    emails.push(resp.data.email);
+    emails.push(resp.data.email || "Not Found!");
   });
   return emails;
 };
